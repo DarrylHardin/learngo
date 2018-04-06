@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-
+	// will not work with numbers such as 5 and 10
 	for i := 1; i <= 100; i++ {
 		var fizz string
 		var buzz string
