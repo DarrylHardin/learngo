@@ -3,9 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	var fizz string
-	var buzz string
+
 	for i := 1; i <= 100; i++ {
+		var fizz string
+		var buzz string
 		if i%3 == 0 {
 			fizz = "Fizz"
 		}
@@ -14,8 +15,5 @@ func main() {
 		}
 
 		fmt.Println(i, fizz+buzz)
-
-		fizz = ""
-		buzz = ""
 	}
 }

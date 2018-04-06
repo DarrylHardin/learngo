@@ -4,17 +4,11 @@ import (
 	"fmt"
 )
 
-func half(num int) (x int) {
-	var y bool
-	y = false
-	if a := num; num%2 == 0 {
-		x = a / 2
-		y = true
-	}
-	return
-}
-
 func main() {
 
-	fmt.Println(half(2))
+	half := func(x int) (int, bool) { //pass in one int and return int, bool
+		return x / 2, x%2 == 0
+	}
+
+	fmt.Println(half(10))
 }
