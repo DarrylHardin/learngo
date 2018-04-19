@@ -1,0 +1,6 @@
+Do not need to be passed in
+
+https://godoc.org/text/template#hdr-Functions
+
+This is a go template comment
+{{/*(index .Wisdom 3).Name*/}}

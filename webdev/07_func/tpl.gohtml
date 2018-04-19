@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Func</title>
+</head>
+<body>
+	<h1>Using Functions</h1>
+	<h2>Sage</h2>
+	{{range .Wisdom}}
+	<ul>
+		<li>{{ft .Name}}</li>
+	</ul>
+	{{end}}
+	{{range .Transport}}
+	<h2>Cars</h2>
+	<ul>
+		<li>{{uc .Manufacture}}</li>
+	</ul>
+	{{end}}
+</body>
+</html>

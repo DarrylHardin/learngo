@@ -1,0 +1,9 @@
+//passing data into a template must be done as such
+
+{{template "nested" .}}
+
+//inside the nested template file
+{{.}}
+
+
+//doing {{.}} without {{template "nested" .}} will give <no value>

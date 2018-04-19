@@ -1,0 +1,5 @@
+Value of . does not change as shown below
+
+{{.}} //3
+{{. | fdbl}} //6
+{{.}} //3

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>conditional global statment</title>
+</head>
+<body>
+	{{range .}}
+	{{.Name}}
+	{{end}}
+	{{range .}}
+		{{if eq .Name "Gahndi"}}
+			Admin: {{.Name}}
+		{{end}}
+	{{end}}
+</body>
+</html>

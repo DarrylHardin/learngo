@@ -1,0 +1,29 @@
+//A different way of writing
+
+
+data := items{
+		Wisdom:    sages,
+		Transport: cars,
+	}
+
+type items struct {
+ 	Wisdom    []sage
+	Transport []car
+}
+
+//refactored to:
+
+data := struct {
+		Wisdom    []sage
+		Transport []car
+	}{
+		sages,
+		cars,
+	}
+
+//removing the need for:
+
+type items struct {
+ 	Wisdom    []sage
+	Transport []car
+}

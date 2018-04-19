@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Struct slice</title>
+</head>
+<body>
+	<h1>Passing in Struct Slice</h1>
+	{{range .Wisdom}}
+	<p>{{.Name}}: {{.Motto}}</p>
+	{{end}}
+	{{range .Transport}}
+	<p>{{.Make}}/{{.Model}}/{{.Year}}</p>
+	{{end}}
+</body>
+</html>

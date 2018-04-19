@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compare int</title>
+</head>
+<body>
+<h1>Comparing Ints</h1>
+{{ if gt .Score1 .Score2}}
+	SCORE 1 > SCORE 2
+{{end}}
+
+{{if lt .Score1 .Score2}}
+	SCORE 1 < SCORE 2
+{{end}}
+
+{{if eq .Score1 .Score2}}
+	SCORE 1 = SCORE 2
+{{end}}
+
+{{if lt .Score1 10}}
+	SCORE 1 < 10
+{{end}}
+</body>
+</html>

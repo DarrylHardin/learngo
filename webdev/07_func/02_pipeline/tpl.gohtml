@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Functions Pipeline</title>
+</head>
+<body>
+	{{.}}
+	{{. | fdbl}}
+	{{. | fdbl | fsq}}
+	{{. | fdbl | fsq| fsqrt}}
+	{{.}}
+</body>
+</html>

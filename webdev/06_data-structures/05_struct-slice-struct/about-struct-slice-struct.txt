@@ -1,0 +1,6 @@
+Input multiple structs and slices into a template
+
+Accessed in range as 
+{{range .Wisdom}} //wisdom would be the slice we want to call
+{{.Name}} //.Name is the value in a struct we'd like to show
+{{end}}
