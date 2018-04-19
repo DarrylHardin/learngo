@@ -5,7 +5,8 @@ import "fmt"
 func main() {
 	check := int64(600851475143)
 	var highest int64
-	for i := check / int64(3); i < check/int64(2); i++ {
+	y := 
+	for i := check; i > check/int64(2); i-- {
 		switch {
 		case i%2 == 0 && i != 2:
 			continue
