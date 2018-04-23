@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+</head>
+<body>
+	{{if .}}
+	<main>
+		<p><strong>Variable Name</strong> Identifiers</p>
+		{{range $key, $value := .}}
+			<p>{{$key}}</p>
+			<ul>{{range $value}}<li><em>{{.}}</em></li>{{end}}</ul>
+		{{end}}
+	</main>
+	{{end}}
+<form action="/" method="POST">
+	<input type="text" name="fname">
+	<input type="text" name="lname">
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
