@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	{{range .}}
+		{{.Name}}
+		Breakfast 
+		{{.Breakfast.Time}}
+		Main Dish
+		{{range .Breakfast.Mdish}}
+		{{if .Meat}}
+		Main: {{.Meat}}
+		{{end}}
+		{{if .Veggie}}
+		Vegan: {{.Veggie}}
+		{{end}}
+		Side: {{.Side}}
+		{{end}}
+		Dessert
+		{{range .Breakfast.Dessert}}
+		Dairy: {{.Dairy}}
+		{{end}}
+		Appetizer
+		{{range .Breakfast.Appetizer}}
+		Greasy: {{.Greasy}}
+		{{end}}
+	{{end}}
+</body>
+</html>

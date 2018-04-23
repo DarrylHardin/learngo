@@ -9,13 +9,13 @@ func main() {
 
 	prime := []int{}
 
-	for i := 2; i <= 60; i++ {
+	for i := 2; i <= 13195; i++ {
 		if i%2 != 0 {
 			prime = append(prime, i)
 		}
 	}
-	for i := 2; i <= 60; i++ {
-		for x := 60; x > 1; x-- {
+	for i := 2; i <= 13195; i++ {
+		for x := 13195; x > 1; x-- {
 			for num, key := range prime {
 				if i*x == key {
 					prime = append(prime[:num], prime[num+1:]...)
@@ -28,7 +28,7 @@ func main() {
 
 	var x int
 	for _, key := range prime {
-		if 60%key == 0 {
+		if 13195%key == 0 {
 			if x < key {
 				x = key
 			}

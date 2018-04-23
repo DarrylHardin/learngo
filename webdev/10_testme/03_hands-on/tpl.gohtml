@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Florida Hotels</title>
+</head>
+<body>
+	{{range .}}
+		{{.Region}}
+		{{range .Hotels}}
+			{{.Name}} - {{.Street}} - {{.City}} - {{.State}} - {{.Zip}}
+		{{end}}
+	{{end}}
+</body>
+</html>
