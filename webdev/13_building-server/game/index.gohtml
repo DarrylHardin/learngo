@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock, Paper, Scissors</title>
+</head>
+<body>
+	{{$choice := "Rock"}}
+		{{range $key, $value := .}}
+			{{if eq $key "rps"}}
+				{{range $value}} 
+					{{.}} - {{$choice}}
+					{{if eq . $choice}}
+						Draw!
+					{{else if eq . "Scissors"}}
+						Lose!
+					{{else if eq . "Paper"}}
+						Win!
+					{{else}}
+						Something went wrong
+					{{end}}
+				{{end}}
+			{{end}}
+		{{end}}
+	<form action="" method="POST">
+
+		<h3>Choose One:</h3>
+			<label><input type="radio" name="rps" value="Rock">Rock</label>
+			<label><input type="radio" name="rps" value="Paper">Paper</label>
+			<label><input type="radio" name="rps" value="Scissors">Scissors</label>
+			<input type="submit" name="submit">
+	</form>
+</body>
+</html>
