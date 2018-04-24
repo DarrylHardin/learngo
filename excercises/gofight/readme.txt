@@ -1,0 +1,1 @@
+The following files are solutions (or solutions in progress) for codefight problems. I have copied my answers plus the answers of others so that I might learn better ways to code, or in the least give myself far more options when coding.
