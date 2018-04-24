@@ -27,5 +27,5 @@ func centuryFromYear(year int) int {
 }
 
 func main() {
-	centuryFromYear(2220)
+	fmt.Println(centuryFromYear(2220))
 }
