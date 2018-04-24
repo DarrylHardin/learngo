@@ -1,1 +1,1 @@
-The following files are solutions (or solutions in progress) for codefight problems. I have copied my answers plus the answers of others so that I might learn better ways to code, or in the least give myself far more options when coding.
+The following files are solutions (or solutions in progress) for codefight problems. I have copied my answers plus the answers of others so that I might learn better ways to code, or in the least give myself far more options when coding. I have also labeled the codes of others with their usernames as to give credit where it is due.
